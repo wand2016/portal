@@ -2,12 +2,12 @@
 
 namespace Tests;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\TestCase as IlluminateTestCase;
+use Tests\Concerns\RefreshDatabaseLite;
 
 class SomeDBTest extends IlluminateTestCase
 {
-    use RefreshDatabase, CreatesApplication;
+    use RefreshDatabaseLite, CreatesApplication;
 
     /**
      * @test
